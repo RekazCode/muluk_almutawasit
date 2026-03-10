@@ -125,7 +125,7 @@
         }
 
         .contact-btn {
-            background-color: var(--secondary-color);
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
             color: var(--white);
             padding: 0.5rem 1.5rem;
             border-radius: 5px;
@@ -134,7 +134,7 @@
         }
 
         .contact-btn:hover {
-            background-color: var(--primary-color);
+            background: var(--primary-color);
             color: var(--white);
         }
 
@@ -269,12 +269,14 @@
             text-align: center;
             transition: var(--transition);
             border-bottom: 4px solid transparent;
+            border-top: 3px solid transparent;
         }
 
         .card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(4, 3, 39, 0.1);
             border-bottom: 4px solid var(--secondary-color);
+            border-top: 3px solid var(--accent-color);
         }
 
         .card-icon {
@@ -353,7 +355,14 @@
             border-radius: 10px;
             width: 100%;
             max-width: 350px;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(198, 123, 23, 0.3);
+            transition: var(--transition);
+        }
+
+        .info-box:hover {
+            border-color: var(--secondary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(198, 123, 23, 0.15);
         }
 
         .info-box h4 {
@@ -390,6 +399,11 @@
             
             .hero h1 {
                 font-size: 2.5rem;
+            }
+
+            .hero-logo {
+                width: 120px;
+                height: 120px;
             }
             
             .about-grid {
@@ -447,7 +461,7 @@
             </div>
             <div class="about-image">
                 <!-- صورة توضيحية لسيارات -->
-                <img src="https://images.unsplash.com/photo-1563720225384-9c0f679541fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="[صورة سيارات فخمة]">
+                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="[صورة سيارات فخمة]">
             </div>
         </div>
     </section>
@@ -533,6 +547,7 @@
     <!-- التذييل -->
     <footer>
         <div class="container">
+            <img src="logo.png" alt="شعار ملوك المتوسط" style="width: 60px; height: 60px; object-fit: contain; margin-bottom: 10px; opacity: 0.8;">
             <p>جميع الحقوق محفوظة &copy; 2026 <span>لشركة ملوك المتوسط</span> لاستيراد السيارات وقطع الغيار.</p>
         </div>
     </footer>
