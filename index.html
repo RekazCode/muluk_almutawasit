@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>شركة ملوك المتوسط | لاستيراد السيارات وقطع الغيار</title>
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="logo1.png">
     
     <!-- استدعاء خط القاهرة الجميل من جوجل -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,12 +14,13 @@
     <style>
         /* المتغيرات (الألوان الأساسية والخطوط) - مستوحاة من الشعار */
         :root {
-            --primary-color: #040327; /* أزرق بنفسجي داكن من الشعار */
-            --secondary-color: #C67B17; /* ذهبي كهرماني من الشعار */
-            --accent-color: #D59D53; /* ذهبي فاتح من الشعار */
-            --text-color: #2D2D3D;
-            --light-bg: #F5F3F0;
+            --primary-color: #0A0A0A; /* أسود عميق من الشعار */
+            --secondary-color: #FB393A; /* أحمر نابض من الشعار */
+            --accent-color: #828B90; /* رمادي فولاذي من الشعار */
+            --text-color: #1A1A1A;
+            --light-bg: #F2F2F2;
             --white: #FFFFFF;
+            --silver: #E7E7E7; /* فضي فاتح من الشعار */
             --transition: all 0.3s ease-in-out;
         }
 
@@ -60,7 +61,7 @@
         /* --- الرأس (Header) --- */
         header {
             background-color: var(--white);
-            box-shadow: 0 2px 15px rgba(4, 3, 39, 0.08);
+            box-shadow: 0 2px 15px rgba(10, 10, 10, 0.1);
             position: fixed;
             width: 100%;
             top: 0;
@@ -141,7 +142,7 @@
         /* --- القسم الرئيسي (Hero Section) --- */
         .hero {
             height: 100vh;
-            background: linear-gradient(135deg, rgba(4, 3, 39, 0.92), rgba(4, 3, 39, 0.75), rgba(198, 123, 23, 0.3)), url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.93), rgba(10, 10, 10, 0.78), rgba(251, 57, 58, 0.15)), url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
             display: flex;
             align-items: center;
             text-align: center;
@@ -164,13 +165,13 @@
             height: 160px;
             object-fit: contain;
             margin-bottom: 1.5rem;
-            filter: drop-shadow(0 0 30px rgba(198, 123, 23, 0.4));
+            filter: drop-shadow(0 0 30px rgba(251, 57, 58, 0.4));
             animation: logoGlow 3s ease-in-out infinite alternate;
         }
 
         @keyframes logoGlow {
-            0% { filter: drop-shadow(0 0 20px rgba(198, 123, 23, 0.3)); }
-            100% { filter: drop-shadow(0 0 40px rgba(198, 123, 23, 0.6)); }
+            0% { filter: drop-shadow(0 0 20px rgba(251, 57, 58, 0.3)); }
+            100% { filter: drop-shadow(0 0 40px rgba(251, 57, 58, 0.6)); }
         }
 
         .hero p {
@@ -274,7 +275,7 @@
 
         .card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(4, 3, 39, 0.1);
+            box-shadow: 0 10px 30px rgba(10, 10, 10, 0.1);
             border-bottom: 4px solid var(--secondary-color);
             border-top: 3px solid var(--accent-color);
         }
@@ -322,7 +323,7 @@
             left: 0;
             width: 100%;
             padding: 1.5rem;
-            background: linear-gradient(transparent, rgba(4, 3, 39, 0.9));
+            background: linear-gradient(transparent, rgba(10, 10, 10, 0.92));
             color: var(--white);
         }
 
@@ -355,14 +356,14 @@
             border-radius: 10px;
             width: 100%;
             max-width: 350px;
-            border: 1px solid rgba(198, 123, 23, 0.3);
+            border: 1px solid rgba(251, 57, 58, 0.25);
             transition: var(--transition);
         }
 
         .info-box:hover {
             border-color: var(--secondary-color);
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(198, 123, 23, 0.15);
+            box-shadow: 0 10px 25px rgba(251, 57, 58, 0.15);
         }
 
         .info-box h4 {
@@ -380,7 +381,7 @@
 
         /* --- التذييل (Footer) --- */
         footer {
-            background-color: #020118; /* أزرق بنفسجي أغمق من الشعار */
+            background-color: #050505; /* أسود عميق من الشعار */
             color: var(--white);
             text-align: center;
             padding: 2rem 0;
@@ -424,7 +425,7 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img src="logo.png" alt="شعار ملوك المتوسط">
+                    <img src="logo1.png" alt="شعار ملوك المتوسط">
                     ملوك <span>المتوسط</span>
                 </div>
                 <ul class="nav-links">
@@ -441,7 +442,7 @@
     <!-- واجهة الموقع الرئيسية -->
     <section id="home" class="hero">
         <div class="container">
-            <img src="logo.png" alt="شعار ملوك المتوسط" class="hero-logo">
+            <img src="logo1.png" alt="شعار ملوك المتوسط" class="hero-logo">
             <h1>ملوك <span>المتوسط</span></h1>
             <p>خيارك الأول والموثوق لاستيراد أحدث السيارات وأجود قطع الغيار من الأسواق العالمية مباشرة إلى ليبيا.</p>
             <div class="hero-btns">
@@ -541,7 +542,7 @@
     <!-- التذييل -->
     <footer>
         <div class="container">
-            <img src="logo.png" alt="شعار ملوك المتوسط" style="width: 60px; height: 60px; object-fit: contain; margin-bottom: 10px; opacity: 0.8;">
+            <img src="logo1.png" alt="شعار ملوك المتوسط" style="width: 60px; height: 60px; object-fit: contain; margin-bottom: 10px; opacity: 0.8;">
             <p>جميع الحقوق محفوظة &copy; 2026 <span>لشركة ملوك المتوسط</span> لاستيراد السيارات وقطع الغيار.</p>
         </div>
     </footer>
